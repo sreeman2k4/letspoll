@@ -1,0 +1,69 @@
+input
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+  
+}
+#createpoll
+{
+    margin-left: 300px;
+    border:solid 5px brown;
+    width:500px;
+    height:650px;
+}
+#opt
+{
+    /* border:red 5px solid; */
+    width:200px;
+    margin-left: 100px;
+}
+#create
+{
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 50px;
+    background-color: bisque;
+    margin-top: 10px;
+}
+.opt
+{
+    font-size: 20px;
+}
+#pollon
+{
+    font-size: 30px;
+   padding-top: -50px;
+}
+h2
+{
+    font-size:35px ;
+    background-color: antiquewhite;
+    height:70px;
+    padding-top: 15px;
+    margin-top: -0px;
+}
+h1
+{
+    font-family: "audiowide",sans-serif;
+}
+/* body
+{
+    background-image: url("https://media.istockphoto.com/photos/nature-background-picture-id654475732?k=6&m=654475732&s=170667a&w=0&h=34CtTwHu6ZUehmQpbu_hhsBd8b2B5r4_h3bkl9OZZLI=");
+
+} */
+body
+{
+    background-image: linear-gradient(to bottom right,red,orange) ;
+}
+#pollque
+{
+    margin-top: -20px;
+}
+#create:hover
+{
+    background-color: orange;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+    sign in page
+    </title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="mainpage.html">
+    
+    
+
+    </head>
+    <body>
+            <section class="sign-up-form">
+                <form id="input-box">
+                  <div>
+                    <label for="email"><a style="color:powderblue;">Email:</a></label><br>
+                    <input type="text" id="email" class="box" placeholder="email" name="email">
+                  </div>
+                  <div>
+                    <label for="password"><a style="color:powderblue;">Password:</a></label><br>
+                    <input type="text" id="password" class="box" placeholder="password" name="password">
+                  </div>
+                  <button class="btn" type="button" onclick="signUp()">Sign up</button>
+                  <button class="btn" type="button" onclick="signIn()" href="/mainpage.html">Sign in</button>
+                </form>
+              </section>
+    </body>
+    <script>
+        const firebaseConfig = {
+      //firebase config stuff
+    apiKey: "AIzaSyDh8Q55ITaYk4_plnETRY-YVlJRuEEeETU",
+    authDomain: "polls-6f03f.firebaseapp.com",
+    projectId: "polls-6f03f",
+    storageBucket: "polls-6f03f.appspot.com",
+    messagingSenderId: "469762556071",
+    appId: "1:469762556071:web:fafbdac867147ba4259b82",
+    measurementId: "G-FN7J5MXRRY"
+    };
+    // Initialize Firebase
+    // firebase.initializeApp(firebaseConfig);
+    const app = firebase.initializeApp(firebaseConfig);
+    // const analytics = getAnalytics(app);
+    const auth = firebase.auth();
+    
+    function signUp(){
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+    alert(email.value);
+    const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
+    promise.then(u =>{
+    alert("Signed Up");})
+     promise.catch(e => alert(e.message));}
+    
+    
+    function signIn()
+        {  
+          var email = document.getElementById("email");
+          var password = document.getElementById("password");
+          const promise = auth.signInWithEmailAndPassword(email.value, password.value);
+          promise.then(u =>{
+            window.location.href="mainpage.html";})
+          promise.catch(e => alert(e.message)); 
+        }
+    
+        auth.onAuthStateChanged(function(user){
+          
+          if(user){
+            
+            var email = user.email;
+            alert("Active User " + email)
+            }
+            else
+          {
+            alert("No Active User");
+          }
+              
+        });
+      </script>
+</html>

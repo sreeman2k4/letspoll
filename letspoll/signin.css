@@ -1,0 +1,26 @@
+#input-box
+{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 35px;
+    border:solid 5px rgba(33, 4, 4, 0.312);
+    height:250px;width:300px;
+    margin-left: 600px;
+    padding-top: 30px;
+    padding-bottom: -15px;
+    
+}
+body
+{
+    background-color: rgb(110, 38, 38);
+}
+#sign-up-form.input-box
+{
+    border:solid 3px rgba(33, 4, 4, 0.312);
+   height:300px;width:300px;
+}
+.btn
+{
+    background-color: bisque;
+    border-radius: 30px;
+}

@@ -1,0 +1,174 @@
+.topmenu
+{
+    margin-left: 800px;
+    margin-top: -70px;
+    display:flex;
+    
+    color: black;
+    /* background-color: blue; */
+    /* padding-left: 300px; */
+    font-family: "audiowide",sans-serif;
+    
+    
+}
+#createpoll
+{
+    margin-right: 50px;
+}
+
+
+#createpoll
+{
+    padding-left: 40px;
+
+}
+.topbar
+{
+    background-image: linear-gradient(brown,bisque);
+    font-size: 30px;
+    height:100px;
+}
+#profilelogo
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#currentpolls:hover
+{
+    text-decoration: underline;
+}
+#createpoll:hover
+{
+    text-decoration: underline;
+    /* animation: bordereffect 4s infinite ease-out;
+    
+    position: relative;
+    border-bottom:blue 5px solid; */
+    
+
+     
+
+    
+
+}
+
+/* @keyframes bordereffect {
+    
+    20% { border-bottom-color: red  ; border-width: 13px;} 
+    40% { border-bottom-color: blue  ; border-width: 14px;}
+    60% { border-bottom-color: green ; border-width: 15px;}
+    80% { border-bottom-color: black  ; border-width: 16px;}
+    100% { border-bottom-color: violet  ; border-width: 17px;}
+   
+  
+   
+
+    
+} */
+#instructions:hover
+{
+    text-decoration: underline;
+}
+#profilebar
+{
+    display:none;
+   
+     /* border:2px solid black;
+    width:200px; 
+     background-color: brown;  */
+    width:250px;
+    z-index:-1;
+    position:relative
+}
+#accountdetails
+{
+    border:solid 2px black;
+    width:200px;
+    font-size: 25px;
+    padding:10px;
+    
+}
+#dashboard
+{
+    border:2px solid black;
+    width:200px;
+    font-size: 25px;
+    background-color: rgb(211, 204, 204);
+    padding:10px;
+}
+.piechart {
+    margin-top: 100px;
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 900px;
+    top:100px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        rgb(15, 246, 15) 0 70deg, 
+        rgb(54, 54, 236) 0 235deg, 
+        rgb(248, 27, 27) 40deg);
+     
+    background-color: brown;
+}
+/* .holder
+{
+    width:100px;height:100px;
+    background-color: blue;
+    margin
+} */
+
+#accountdetails:hover,#logout:hover,#dashboard:hover
+{
+    background-color: bisque;
+}
+.info
+{
+    font-size: 35px;
+    font-weight: bolder;
+    color:brown;
+}
+.details
+{
+    font-size: 25px;
+}
+#container
+{
+    border:solid 5px bisque;
+    width:500px;
+    padding-left: 30px;
+    box-shadow: 5px 10px 18px black;
+    
+}
+#accountdetails
+{
+    padding-left: 20px;
+}
+
+
+h1
+{
+    font-family: "audiowide",sans-serif;
+}
+#instructions
+{
+    text-decoration: none;
+    color:black;
+}
+#createpoll
+{
+    text-decoration: none;
+    color:black;
+}
+#logout
+{
+    text-decoration: none;
+    color:black;
+    border:solid 2px black;
+    width:500px;
+    font-size: 25px;
+    padding:10px;
+    
+
+}

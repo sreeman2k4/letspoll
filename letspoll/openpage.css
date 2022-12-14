@@ -1,0 +1,89 @@
+body
+{
+    background-image: url('https://www.androidauthority.com/wp-content/uploads/2015/11/00-best-backgrounds-and-wallpaper-apps-for-android.jpg');
+    background-size: 1530px 760px;
+    background-position: fixed;
+}
+
+#letspoll
+{
+    font-size:60px;
+    color: rgb(186, 167, 167);
+}
+#statement
+{
+    font-size:35px;
+    overflow:hidden;
+    animation: type 8s steps(60,end);
+    color: bisque;
+    white-space:nowrap;
+    width:20em;
+    margin-top: -25px;
+
+    
+}
+@keyframes type
+{
+    from
+    {
+        width: 0;
+    }
+}
+
+.mainbox
+{
+    margin-top:490px;
+    margin-left:45px;
+    width:550px;
+}
+.menubox
+{
+    background-color: red;
+    height: 500px;width:100px;
+
+}
+.profile,.closemenu,.about
+{
+    font-size: 20px;
+    color:beige;
+}
+.threeblanks,.dashboard,.currentpolls
+{
+    font-size: 25px;
+    color:bisque;
+}
+.w3-top
+{
+    display:grid;
+
+}
+#signin
+{
+    padding:15px;
+    font-size: 30px;
+    background-color: azure;
+    margin-top: -1000px;
+    margin-left: 50px;
+    background-color: rgb(157, 62, 62);
+    border-radius: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    color:bisque;
+}
+#about
+{
+    padding:15px;
+    font-size: 30px;
+    background-color: azure;
+    margin-top: 1000px;
+    margin-left: 50px;
+    background-color: rgb(157, 62, 62);
+    border-radius: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    color:bisque;
+}
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            mainpage
+        </title>
+    <link rel="stylesheet" href="/mainpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="/signin.html">
+    <link rel="stylesheet" href="/instructions.html">
+    <link rel="stylesheet" href="/createpoll.html">
+
+
+    
+    
+    </head>
+    <body>
+      <div id="body">
+        <div class="topbar">
+            <img id="profilelogo" onclick="openbar()"    src="https://i.pinimg.com/originals/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg"width="90px" height="90px" >
+             <div class="topmenu">
+                <a id="currentpolls">currentpolls</a>
+                <a id="createpoll" href="/createpoll.html">createpoll</a>
+                <a id="instructions" href="/instructions.html">instructions</a>
+             </div>
+         </div>
+       <div id="profilebar"style="display:none">
+           <p id="accountdetails" onclick="details()">account details</p>
+           <p id="dashboard" href="#">dashboard</p>
+           <a id="logout" href="signin.html">logout</a>
+       </div>
+      <div class="holder">
+        <span class="piechart"></span>
+      </div>
+      <div id="container"style="display:none">
+        
+        <h1>Account details</h1>
+        <p class="info">profile pic</p><br>
+        <label for="Name" class="info"><a style="color:rgb(58, 146, 157);">Name:</a></label><br>
+        <p class="details">Gudla Saiveer Sreeman</p>
+        <label for="address" class="info"><a style="color:rgb(56, 147, 159);">address:</a></label><br>
+        <p class="details">8-106/7j,Jaggayyapet(521175),Krishna,Andhra Pradesh</p>
+        <label for="Phone No" class="info"><a style="color:rgb(45, 125, 136);">Phone no:</a></label><br>
+        <p class="details">9642498333</p>
+        
+        
+
+      </div>
+      
+      
+      </div>
+    </body>
+    <script>
+        function openbar()
+        {
+            document.getElementById("profilebar").style.display="block";
+            document.getElementById("container").style.display="none";
+            document.getElementsByClassName("topmenu")[0].style.filter="none";
+            document.getElementsByClassName("piechart")[0].style.filter="none";
+        }
+        function details()
+        {
+            document.getElementById("container").style.display="block";
+            document.getElementById("profilebar").style.display="none";
+            document.getElementsByClassName("topmenu")[0].style.filter="blur(8px)";
+            document.getElementsByClassName("piechart")[0].style.filter="blur(8px)";
+
+
+        }
+        // $(document).on('click',function(e)
+        // {
+        //     var container= $("#container");
+        //     if(!$(e.target).closest(container).length)
+        //         container.hide();
+        // }
+        // document.addEventListener('mouseup',function(e){
+        //     var container=document.getElementById('container');
+        //     if(!container.contains(e.target)){
+        //         container.style.display='none';
+        //     }
+        // }
+        document.addEventListener('mouseup', function(e) {
+  let container = document.getElementById('container');
+  if (!container.contains(e.target)) {
+    container.style.display = 'none';
+  }
+});
+
+    </script>
+
+    
+</html>

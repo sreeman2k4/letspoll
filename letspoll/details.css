@@ -1,0 +1,22 @@
+#details{
+    margin:600px;
+    background-color:pink
+    /* width: 100px; */
+
+    
+}
+.submit{
+    text-decoration: none;
+    color:aliceblue;
+}
+.cred{
+    font-size: 20px;
+}
+
+#infos
+{
+    padding-left:10px;
+}
+#profilepic{
+    margin-left:100px;
+}

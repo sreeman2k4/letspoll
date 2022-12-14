@@ -1,0 +1,27 @@
+#back
+{
+    text-decoration: none;
+    border:solid 3px rgb(232, 169, 92);
+    padding:5px;
+    margin-left:600px;
+    margin-top: 1000px;
+    font-size: 30px;
+    background-color: rgb(234, 174, 100);
+    border-radius: 50px;
+    color:azure;
+}
+h1
+{
+    font-family: "audiowide",sans-serif;
+    color: rgb(128, 74, 9);
+    font-size: 40px;
+}
+#instructionbar
+{
+    border:solid 5px rgb(234, 174, 100);
+    padding:5px;
+}
+p
+{
+    font-size: 20px;
+}
